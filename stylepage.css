@@ -1,0 +1,103 @@
+
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img{
+    width: 60px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #FF1E00;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #FF1E00;
+}
+/* navbar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .banner {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+    margin-top: 50px;
+  }
+  
+  .banner img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    max-height: 300px; /* ini membatasi tinggi maksimal */
+    object-fit: cover;  /* memastikan gambar tetap proporsional & terpotong rapi jika perlu */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .content {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+  }
+  
+  
